@@ -16,6 +16,9 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'catppuccin/nvim'
+Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
+Plug 'romgrk/barbar.nvim'
+
 
 call plug#end()
 
