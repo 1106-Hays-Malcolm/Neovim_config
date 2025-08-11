@@ -1,30 +1,30 @@
 -- disable netrw at the very start of your init.lua
-  vim.g.loaded_netrw = 1
-  vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
-  -- optionally enable 24-bit colour
-  vim.opt.termguicolors = true
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
 
-  -- OR setup with some options
-  require("nvim-tree").setup({
+-- OR setup with some options
+require("nvim-tree").setup({
     sort = {
-      sorter = "case_sensitive",
+        sorter = "case_sensitive",
     },
     view = {
-      width = 30,
+        width = 30,
     },
     renderer = {
-      group_empty = true,
+        group_empty = true,
     },
     filters = {
-      dotfiles = true,
+        dotfiles = false,
     },
-  })
+})
 
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("code-completion")
-require("file-explorer")
+-- require("file-explorer")
 
 require("nvim-treesitter.configs").setup({
     ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "javascript" },
