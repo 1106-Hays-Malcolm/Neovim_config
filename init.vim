@@ -121,3 +121,12 @@ map T <Plug>Sneak_T
 " Other:
 " :BarbarEnable - enables barbar (enabled by default)
 " :BarbarDisable - very bad command, should never be used
+
+" Auto close brackets and parenthesis
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
