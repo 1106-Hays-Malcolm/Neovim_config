@@ -109,8 +109,14 @@ nnoremap <silent> <Space>bl <Cmd>BufferOrderByLanguage<CR>
 nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
 
 " Sneak Shortcuts
-nnoremap f <Plug>Sneak_s
-nnoremap F <Plug>Sneak_S
+" nnoremap f <Plug>Sneak_s
+" nnoremap F <Plug>Sneak_S
+
+" One-character sneak shortcuts
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
 
 " Other:
 " :BarbarEnable - enables barbar (enabled by default)
