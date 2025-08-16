@@ -18,7 +18,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'catppuccin/nvim'
 Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
 Plug 'romgrk/barbar.nvim'
-
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
 
@@ -107,6 +107,10 @@ nnoremap <silent> <Space>bn <Cmd>BufferOrderByName<CR>
 nnoremap <silent> <Space>bd <Cmd>BufferOrderByDirectory<CR>
 nnoremap <silent> <Space>bl <Cmd>BufferOrderByLanguage<CR>
 nnoremap <silent> <Space>bw <Cmd>BufferOrderByWindowNumber<CR>
+
+" Sneak Shortcuts
+nnoremap f <Plug>Sneak_s
+nnoremap F <Plug>Sneak_S
 
 " Other:
 " :BarbarEnable - enables barbar (enabled by default)
