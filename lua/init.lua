@@ -40,3 +40,7 @@ require("nvim-treesitter.configs").setup({
 	    }
     }
 })
+
+vim.diagnostic.config({ update_in_insert = true })
+
+require('leap').set_default_mappings()
