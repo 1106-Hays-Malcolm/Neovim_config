@@ -27,7 +27,7 @@ require("code-completion")
 -- require("file-explorer")
 
 require("nvim-treesitter.configs").setup({
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "javascript" },
+    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "javascript", "c_sharp" },
     auto_install = false,
     highlight = { enable = true, additional_vim_regex_highlighting = false },
     incremental_selection = {
@@ -44,3 +44,6 @@ require("nvim-treesitter.configs").setup({
 vim.diagnostic.config({ update_in_insert = true })
 
 require('leap').set_default_mappings()
+
+
+require("unity.plugin").setup()

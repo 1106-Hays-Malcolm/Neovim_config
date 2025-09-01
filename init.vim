@@ -23,6 +23,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 Plug 'tpope/vim-repeat'
 Plug 'ggandor/leap.nvim'
+Plug 'apyra/nvim-unity-sync'
 
 
 call plug#end()
@@ -34,8 +35,6 @@ NvimTreeOpen
 " nnoremap <C-n> :NvimTreeOpen<CR>
 
 colorscheme catppuccin 
-botright terminal 
-resize 10
 
 " Shortcuts for changing windows
 " :tnoremap <A-h> <C-\><C-N><C-w>h
@@ -54,9 +53,6 @@ resize 10
 " Shortcut for exiting terminal mode
 tnoremap <esc> <C-\><C-N>
 
-" Indentation settings
-set shiftwidth=4 expandtab
-set autoindent
 
 " barbar keybindings
 
